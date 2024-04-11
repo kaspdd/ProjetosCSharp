@@ -1,0 +1,14 @@
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\bin\Debug\net8.0\Atividade07.exe
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\bin\Debug\net8.0\Atividade07.deps.json
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\bin\Debug\net8.0\Atividade07.runtimeconfig.json
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\bin\Debug\net8.0\Atividade07.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\bin\Debug\net8.0\Atividade07.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\obj\Debug\net8.0\Atividade07.GeneratedMSBuildEditorConfig.editorconfig
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\obj\Debug\net8.0\Atividade07.AssemblyInfoInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\obj\Debug\net8.0\Atividade07.AssemblyInfo.cs
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\obj\Debug\net8.0\Atividade07.csproj.CoreCompileInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\obj\Debug\net8.0\Atividade07.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\obj\Debug\net8.0\refint\Atividade07.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\obj\Debug\net8.0\Atividade07.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\obj\Debug\net8.0\Atividade07.genruntimeconfig.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade07\obj\Debug\net8.0\ref\Atividade07.dll

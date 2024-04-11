@@ -1,0 +1,14 @@
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\bin\Debug\net8.0\Atividade04.exe
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\bin\Debug\net8.0\Atividade04.deps.json
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\bin\Debug\net8.0\Atividade04.runtimeconfig.json
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\bin\Debug\net8.0\Atividade04.dll
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\bin\Debug\net8.0\Atividade04.pdb
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\obj\Debug\net8.0\Atividade04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\obj\Debug\net8.0\Atividade04.AssemblyInfoInputs.cache
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\obj\Debug\net8.0\Atividade04.AssemblyInfo.cs
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\obj\Debug\net8.0\Atividade04.csproj.CoreCompileInputs.cache
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\obj\Debug\net8.0\Atividade04.dll
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\obj\Debug\net8.0\refint\Atividade04.dll
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\obj\Debug\net8.0\Atividade04.pdb
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\obj\Debug\net8.0\Atividade04.genruntimeconfig.cache
+C:\Users\caralvesde\Documents\ProjetosCSharp\Atividade04\obj\Debug\net8.0\ref\Atividade04.dll

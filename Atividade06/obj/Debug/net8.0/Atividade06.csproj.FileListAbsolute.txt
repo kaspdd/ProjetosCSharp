@@ -1,0 +1,14 @@
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\bin\Debug\net8.0\Atividade06.exe
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\bin\Debug\net8.0\Atividade06.deps.json
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\bin\Debug\net8.0\Atividade06.runtimeconfig.json
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\bin\Debug\net8.0\Atividade06.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\bin\Debug\net8.0\Atividade06.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\obj\Debug\net8.0\Atividade06.GeneratedMSBuildEditorConfig.editorconfig
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\obj\Debug\net8.0\Atividade06.AssemblyInfoInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\obj\Debug\net8.0\Atividade06.AssemblyInfo.cs
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\obj\Debug\net8.0\Atividade06.csproj.CoreCompileInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\obj\Debug\net8.0\Atividade06.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\obj\Debug\net8.0\refint\Atividade06.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\obj\Debug\net8.0\Atividade06.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\obj\Debug\net8.0\Atividade06.genruntimeconfig.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Atividade06\obj\Debug\net8.0\ref\Atividade06.dll

@@ -1,0 +1,14 @@
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\bin\Debug\net8.0\Quitanda.exe
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\bin\Debug\net8.0\Quitanda.deps.json
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\bin\Debug\net8.0\Quitanda.runtimeconfig.json
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\bin\Debug\net8.0\Quitanda.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\bin\Debug\net8.0\Quitanda.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\obj\Debug\net8.0\Quitanda.GeneratedMSBuildEditorConfig.editorconfig
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\obj\Debug\net8.0\Quitanda.AssemblyInfoInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\obj\Debug\net8.0\Quitanda.AssemblyInfo.cs
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\obj\Debug\net8.0\Quitanda.csproj.CoreCompileInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\obj\Debug\net8.0\Quitanda.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\obj\Debug\net8.0\refint\Quitanda.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\obj\Debug\net8.0\Quitanda.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\obj\Debug\net8.0\Quitanda.genruntimeconfig.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Quitanda\obj\Debug\net8.0\ref\Quitanda.dll

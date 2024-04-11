@@ -1,0 +1,14 @@
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\bin\Debug\net8.0\Cigarro.exe
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\bin\Debug\net8.0\Cigarro.deps.json
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\bin\Debug\net8.0\Cigarro.runtimeconfig.json
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\bin\Debug\net8.0\Cigarro.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\bin\Debug\net8.0\Cigarro.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\obj\Debug\net8.0\Cigarro.GeneratedMSBuildEditorConfig.editorconfig
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\obj\Debug\net8.0\Cigarro.AssemblyInfoInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\obj\Debug\net8.0\Cigarro.AssemblyInfo.cs
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\obj\Debug\net8.0\Cigarro.csproj.CoreCompileInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\obj\Debug\net8.0\Cigarro.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\obj\Debug\net8.0\refint\Cigarro.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\obj\Debug\net8.0\Cigarro.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\obj\Debug\net8.0\Cigarro.genruntimeconfig.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Cigarro\obj\Debug\net8.0\ref\Cigarro.dll
