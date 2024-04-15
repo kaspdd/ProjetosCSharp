@@ -1,50 +1,54 @@
-namespace ContaBancaria
+class Conta
 {
-    public class Conta
+    //metodo construtor
+    public Conta(Titular nome, int agencia, int numeroDaConta)
     {
-        
-        public double saldo { get; set; }	
-        public double limite { get; set; }
-        public int id { get; set; }
-        //public Dictionary<int, List<double>> listaConta = new Dictionary<int, List<double>>
+        //sempre que for instanciado esta classe Conta, a nova conta sempre 
+        //comecara com os valores atribuidos nas propriedades definidas aqui
+        //ou seja, a conta1 sempre tera o saldo inicial como 0 e o limite em 5000.0.
+        Titular = nome;
+        Agencia = agencia;
+        NumeroDaConta = numeroDaConta;
+        saldo = 0;
+        limite = 5000.0;
+    }
+    private List<Titular> titularCadastrado = new List<Titular>();
+    public Titular Titular { get; }
+    public int Agencia {get; } 
+    public int NumeroDaConta {get; }
+    public double saldo { get; set;}
+    public double limite { get; }
 
-        public Conta()
-        {
-            saldo = 0;
-            limite = 5000.0;
-            //listaConta.Add(id, new List<double>{saldo});
-            
-        }
 
-        public double Sacar(double valor)
-        {
-                saldo-=valor;
-                Tarifar();
-                return saldo;
-            
-        }
-
-        public double Depositar(double valor)
-        {
-            saldo+=valor;
-            Tarifar();
-            return saldo;
-            
-        }
-
-        public void VerificarSaldo(int id)
-        {
-            
-        }
-
-        private double Tarifar()
-        {
-            return saldo -=0.5;
-        } 
+    public double Sacar(double valor)
+    {
+        saldo -= valor;
+        Tarifar();
+        return saldo;
 
     }
 
+    public double Depositar(double valor)
+    {
+        saldo += valor;
+        Tarifar();
+        return saldo;
+
+    }
+
+    public void VerificarSaldo(int id)
+    {
+
+    }
+
+    private double Tarifar()
+    {
+        return saldo -= 0.5;
+    }
+
 }
+
+
 
 
 
