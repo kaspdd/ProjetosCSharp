@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Veiculos_Senac")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b9c81a40fd791711aa8f500b4be78871dc062ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Veiculos_Senac")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Veiculos_Senac")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
