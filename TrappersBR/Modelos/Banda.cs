@@ -1,3 +1,7 @@
+
+//o namespace aqui esta retratando o nome da pasta prinicipal que contem o projeto, seguido do nome da pasta que estao as classes modelo.
+namespace TrapperBR.Modelos;
+
 class Banda
 {
     public Banda(string nome)
@@ -5,10 +9,10 @@ class Banda
         Nome = nome;
     }
     private List<Album> albums = new List<Album>();
+    private List<int> notas = new List<int>();
 
     //para possibilitar que o parametro abaixo consiga utlizar o get(somente leitura) somente se o construtor estiver pedindo algo ou setando um valor direto no parametro.
     public string Nome { get; }
-    public string Danone { get; }
 
     //metodos
     public void AdicionarAlbum(Album album)

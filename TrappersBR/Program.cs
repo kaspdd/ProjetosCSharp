@@ -1,35 +1,217 @@
-﻿
-//instanciando uma nova banda
-Banda derek = new Banda("Derek");
+﻿// See https://aka.ms/new-console-template for more information
 
-//instaciando um novo genero
-Genero hardTrap = new Genero("HardTrap");
-Genero Plugnnb = new Genero("PlugnnB");
+using System.Runtime.CompilerServices;
+using TrapperBR.Modelos;
 
-//instanciando um novo album com o metodo construtor obrigando informar o nome e o genero.
-Album albumDoDerek = new Album("TTF", Plugnnb);
+Banda ricardoMoveis = new Banda("Ricardo Moveis");
+Banda chrisBrown = new Banda("Chris Brown");
 
-//instanciando uma musica com metodo construtor obrigando informar o nome do artista e genero da musica.
-Musica musica1 = new Musica("trap the fato nois fez em 5", 260, derek, hardTrap)
+
+Dictionary<string, Banda> bandasRegistradas = new Dictionary<string, Banda>();
+bandasRegistradas.Add(ricardoMoveis.Nome, ricardoMoveis);
+bandasRegistradas.Add(chrisBrown.Nome, chrisBrown);
+
+const string mensagemDeBoasVindas = "Bem vindo a Galery dos Trappers Br!\n";
+
+static void ExibirLogo()
 {
-    Disponivel = true
-};
+    Console.WriteLine(@"
+░██████╗░░█████╗░██╗░░░░░███████╗██████╗░██╗░░░██╗  ████████╗██████╗░░█████╗░██████╗░██████╗░███████╗██████╗░░██████╗
+██╔════╝░██╔══██╗██║░░░░░██╔════╝██╔══██╗╚██╗░██╔╝  ╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔════╝
+██║░░██╗░███████║██║░░░░░█████╗░░██████╔╝░╚████╔╝░  ░░░██║░░░██████╔╝███████║██████╔╝██████╔╝█████╗░░██████╔╝╚█████╗░
+██║░░╚██╗██╔══██║██║░░░░░██╔══╝░░██╔══██╗░░╚██╔╝░░  ░░░██║░░░██╔══██╗██╔══██║██╔═══╝░██╔═══╝░██╔══╝░░██╔══██╗░╚═══██╗
+╚██████╔╝██║░░██║███████╗███████╗██║░░██║░░░██║░░░  ░░░██║░░░██║░░██║██║░░██║██║░░░░░██║░░░░░███████╗██║░░██║██████╔╝
+░╚═════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝░░╚═╝░░░╚═╝░░░  ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░╚══════╝╚═╝░░╚═╝╚═════╝░
 
-//instanciando uma musica com metodo construtor obrigando informar o nome do artista e genero da musica.
-Musica musica2 = new Musica("Essa vadia me estiga", 192, derek, hardTrap)
-//essas chaves sáo chamadas de inicializadores, podem ser de listas ou propriedades
+██████╗░██████╗░
+██╔══██╗██╔══██╗
+██████╦╝██████╔╝
+██╔══██╗██╔══██╗
+██████╦╝██║░░██║
+╚═════╝░╚═╝░░╚═╝
+            ");
+    Console.WriteLine(mensagemDeBoasVindas);
+
+}
+//Funcoes
+void RegistrarBandas()
 {
-    Disponivel = false
-};
+    registrarNovamente:
+    Console.Clear();
+    ExibirTituloDaOpcao("Registrar Bandas");
+    Console.Write("Digite o nome do Artista: ");
+    string nomeArtista = Console.ReadLine()!;
+    Console.WriteLine($"\nO Artista {nomeArtista} foi Registrado com sucesso!!\n");
+    Banda banda = new Banda(nomeArtista);
+    bandasRegistradas.Add(nomeArtista, banda);
+    Console.WriteLine("Deseja registrar um novo Artista?\nDigite 1 para (SIM)\nDigite 2 ou qualquer outra tecla para (NAO)");
+    string opcaoRegistrarBandas = Console.ReadLine()!;
+    switch (opcaoRegistrarBandas)
+    {
+        case "1":
+            Console.Clear();
+            goto registrarNovamente;
+        default:
+            Console.WriteLine("Aguarde 2 segundos para ser direcionado ao menu...");
+            //A funcao Thread.Sleep(2000) faz com que o programa fique 2000 milesegundos parado antes da proxima acao.
+            Thread.Sleep(2000);
+            Console.Clear();
+            ExibirOpcoesDoMenu();
+            break;
+    }
+    
+}
 
-//chamando o metodo para adicionar as musicas no album
-albumDoDerek.AdicionarMusica(musica1);
-musica1.ExibirFichaTecnicaDaMusica();
-albumDoDerek.AdicionarMusica(musica2);
-musica2.ExibirFichaTecnicaDaMusica();
-//albumDoDerek.AdicionarGeneroAlbum(hardTrap);
-derek.AdicionarAlbum(albumDoDerek);
+void MostrarArtistasRegistrados()
+{
+    Console.Clear();
+    ExibirTituloDaOpcao("Exibindo Artistas Registrados");
+    // for (int i = 0; i< listaDasBandas.Count; i++)
+    // {
+    //     Console.WriteLine($"Artista: {listaDasBandas[i]}");
+    // }
 
-derek.ExibirDiscografia();
-albumDoDerek.ExibirMusicasDoAlbum();
+    foreach (string artista in artistasRegistrados.Keys)
+    {
+        Console.WriteLine($"Artista: {artista} ");
+    }
+
+    Console.WriteLine("\nDigite qualquer tecla para voltar ao menu:");
+    Console.ReadKey();
+    Console.Clear();
+    Console.WriteLine("Voltando...");
+    Thread.Sleep(2000);
+    ExibirOpcoesDoMenu();
+}
+
+void AvaliarArtista()
+{
+    //digite qual artista deseja avaliar
+    //verificar se a banda existe no dicionario, ai sim pode atribuir ao dicionario
+    //senao, volta ao menu principal
+    avaliandoNovamente:
+    Console.Clear();
+    ExibirTituloDaOpcao("Avaliar Artista");
+    Console.Write("Digite o nome do Artista que deseja avaliar: ");
+    string nomeDoArtista = Console.ReadLine()!;
+
+    if (artistasRegistrados.ContainsKey(nomeDoArtista)){
+        Console.Write($"Qual é a nota que o artista {nomeDoArtista} merece? ");
+        double nota = double.Parse(Console.ReadLine()!);
+        //atribuindo uma nota ao artista digitado no variavel nomeArtista.
+        artistasRegistrados[nomeDoArtista].Add(nota);
+        Console.WriteLine($"A nota {(nota):f1} para o Artista {nomeDoArtista} foi registrada com sucesso!!.");
+        Console.WriteLine("Aperte qualquer tecla para continuar...");
+        Console.ReadKey();
+        Console.Clear();
+    }
+    else
+    {
+        Console.WriteLine($"O artista {nomeDoArtista} nao foi encontrado );");
+    }
+    Console.WriteLine("Deseja realizar uma nova avaliacao? \nDigite 1 para (SIM)\nDigite 2 ou qualquer outra tecla para (NAO): ");
+    string opcaoAvaliacao = Console.ReadLine()!;
+    switch (opcaoAvaliacao)
+    {
+        case "1":
+            Console.Clear();
+            goto avaliandoNovamente;
+        default:
+            Console.WriteLine("Aguarde 2 segundos para ser direcionado ao menu...");
+            //A funcao Thread.Sleep(2000) faz com que o programa fique 2000 milesegundos parado antes da proxima acao.
+            Thread.Sleep(2000);
+            Console.Clear();
+            ExibirOpcoesDoMenu();
+            break;
+    }
+    
+}
+
+void MediaAvaliacaoArtista()
+{
+    mediaNovamente:
+    Console.Clear();
+    ExibirTituloDaOpcao("Media das aviliacoes dos artistas");
+    Console.Write("Digite o nome do artista que deseja verificar a media das avaliacoes: ");
+    string nomeDoArtista = Console.ReadLine()!;
+
+    if(artistasRegistrados.ContainsKey(nomeDoArtista))
+    {
+        List<double> mediaDasAvaliacoes = artistasRegistrados[nomeDoArtista];
+        Console.WriteLine($"A mediaDasNotas das avaliacoes do artista {nomeDoArtista} é: {mediaDasAvaliacoes.Average():f2}");
+    }
+    else
+    {
+        Console.WriteLine($"O artista {nomeDoArtista} nao foi encontrado );");
+    }
+    Console.WriteLine("Deseja realizar uma nova avaliacao? \nDigite 1 para (SIM)\nDigite 2 ou qualquer outra tecla para (NAO): ");
+    string opcaoAvaliacao = Console.ReadLine()!;
+    switch (opcaoAvaliacao)
+    {
+        case "1":
+            Console.Clear();
+            goto mediaNovamente;
+        default:
+            Console.WriteLine("Aguarde 2 segundos para ser direcionado ao menu...");
+            //A funcao Thread.Sleep(2000) faz com que o programa fique 2000 milesegundos parado antes da proxima acao.
+            Thread.Sleep(2000);
+            Console.Clear();
+            ExibirOpcoesDoMenu();
+            break;
+    }
+}
+
+
+//funcao para colocar a quantidade de asterisco de acordo com o tamanho da string titulo.
+void ExibirTituloDaOpcao(string titulo)
+{
+    //int quantidadeDeLetras = titulo.Length;
+    //o PadLeft é uma funcao que serve para colocar o caractere definido a esqueda, no caso foi o '-'
+    string traco = string.Empty.PadRight(5,'-').PadLeft(5,'-');
+    Console.WriteLine(traco+titulo+traco);
+}
+
+void ExibirOpcoesDoMenu()
+{
+opcaoInvalida:
+    ExibirLogo();
+    Console.WriteLine("Escolha uma opcao no nosso menu: \n");
+    Console.WriteLine("Digite 1 - Para cadastrar um Artista");
+    Console.WriteLine("Digite 2 - Para listar os Artitas");
+    Console.WriteLine("Digite 3 - Para avaliar um artista");
+    Console.WriteLine("Digite 4 - Para exibir a media de um Artista");
+    Console.WriteLine("Digite 5 - Para sair: ");
+    string opcaoEscolhida = Console.ReadLine()!;
+
+    switch (opcaoEscolhida)
+    {
+        case "1":
+            RegistrarArtistas();
+            //Console.WriteLine($"Voce escolheu a opcao {opcaoEscolhida} ");
+            break;
+        case "2":
+            MostrarArtistasRegistrados();
+            //Console.WriteLine($"Voce escolheu a opcao {opcaoEscolhida} ");
+            break;
+        case "3":
+            AvaliarArtista();
+            break;
+        case "4":
+            MediaAvaliacaoArtista();
+            break;
+        case "5":
+            Console.WriteLine("Flwwwww...");
+            break;
+        default:
+            Console.WriteLine($"Voce escolheu uma opcao invalida ); ");
+            Console.WriteLine("Tente Novamente\n");
+            goto opcaoInvalida;
+    }
+
+}
+
+
+
+
+ExibirOpcoesDoMenu();
 
