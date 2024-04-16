@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrappersBR", "TrappersBR\Tr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podcast", "Podcast\Podcast.csproj", "{43309292-0C1F-4E85-B796-191634DC5371}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heranca_senac", "Heranca_senac\Heranca_senac.csproj", "{3C29BB42-D631-43B7-A488-F1057E06324C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veiculos_Senac", "Veiculos_Senac\Veiculos_Senac.csproj", "{F0CE8E90-86F9-4ACE-BBEF-2667DD940046}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -102,5 +106,13 @@ Global
 		{43309292-0C1F-4E85-B796-191634DC5371}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43309292-0C1F-4E85-B796-191634DC5371}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43309292-0C1F-4E85-B796-191634DC5371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C29BB42-D631-43B7-A488-F1057E06324C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C29BB42-D631-43B7-A488-F1057E06324C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C29BB42-D631-43B7-A488-F1057E06324C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C29BB42-D631-43B7-A488-F1057E06324C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0CE8E90-86F9-4ACE-BBEF-2667DD940046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0CE8E90-86F9-4ACE-BBEF-2667DD940046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0CE8E90-86F9-4ACE-BBEF-2667DD940046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0CE8E90-86F9-4ACE-BBEF-2667DD940046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
