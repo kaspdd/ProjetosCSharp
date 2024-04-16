@@ -1,3 +1,5 @@
+namespace TrapperBR.Modelos;
+
 class Genero
 {
     public Genero(string nome)

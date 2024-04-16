@@ -1,5 +1,5 @@
 using System.Reflection.Metadata;
-
+namespace TrapperBR.Modelos;
 class Musica
 {
     //metodod construtor

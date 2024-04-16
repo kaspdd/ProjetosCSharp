@@ -1,3 +1,5 @@
+
+namespace TrapperBR.Modelos;
 class Album
 {
     public Album(string nome, Genero genero)
