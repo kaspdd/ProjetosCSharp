@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Veiculos_Senac")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Servicos_Heranca_Senac")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53677fe565340b36f632e7492cd46eb0437268a5")]
-[assembly: System.Reflection.AssemblyProductAttribute("Veiculos_Senac")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Veiculos_Senac")]
+[assembly: System.Reflection.AssemblyProductAttribute("Servicos_Heranca_Senac")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Servicos_Heranca_Senac")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

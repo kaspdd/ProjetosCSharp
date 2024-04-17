@@ -2,6 +2,7 @@
 
 using System.Security.Cryptography.X509Certificates;
 
+string opcaoImprimir = "";
 void MenuPrincipal()
 {
     Console.Clear();
@@ -51,9 +52,22 @@ void MenuPrincipal()
         Console.Write("Digite o cambio do automovel: ");
         carro.Cambio = Console.ReadLine();
         Console.Clear();
-        Console.WriteLine($"Segue os detalhes do carro:\n\n{carro.ResumoAutomovel}\n");
-        Console.WriteLine("Aperte qualquer tecla para continuar...");
-        Console.ReadKey();
+        Console.WriteLine("Deseja imprimir as informacoes?\nDigite 1 para (sim)\nDigite 2 ou qualquer outra tecla para (nao)");
+        opcaoImprimir = Console.ReadLine();
+        switch (opcaoImprimir)
+        {
+            case "1":
+                Console.Clear();
+                Console.WriteLine($"Segue os detalhes do carro:\n\n{carro.ResumoAutomovel.ToUpper()}\n");
+                Console.WriteLine("Aperte qualquer tecla para continuar...");
+                Console.ReadKey();
+                break;
+            case "2":
+                Console.WriteLine("Aperte qualquer tecla para continuar...");
+                Console.ReadKey();
+                break;
+        }
+        
     }
     void CadastrandoMotocicleta()
     {
@@ -71,9 +85,23 @@ void MenuPrincipal()
         moto.Transmissao = Console.ReadLine();
         Console.Write("Digite a potencia da Motoclicleta: ");
         moto.PotenciaMotor = int.Parse(Console.ReadLine());
-        Console.WriteLine($"Segue os datalhes da moto:\n\n{moto.ResumoMotocicleta}");
-        Console.WriteLine("Aperte qualquer tecla para continuar...");
-        Console.ReadKey();
+        Console.WriteLine("Deseja imprimir as informacoes?\nDigite 1 para (sim)\nDigite 2 ou qualquer outra tecla para (nao)");
+        opcaoImprimir = Console.ReadLine();
+        switch (opcaoImprimir)
+        {
+            case "1":
+                Console.Clear();
+                Console.WriteLine($"Segue os datalhes da moto:\n\n{moto.ResumoMotocicleta.ToUpper()}");
+                Console.WriteLine("Aperte qualquer tecla para continuar...");
+                Console.ReadKey();
+                break;
+            case "2":
+                Console.WriteLine("Aperte qualquer tecla para continuar...");
+                Console.ReadKey();
+                break;
+        }
+        
+        
     }
 
     void CadastrandoHelicoptero()
@@ -92,9 +120,22 @@ void MenuPrincipal()
         heli.CapacidadeDePessoas = int.Parse(Console.ReadLine());
         Console.Write("Digite a carga em Kg suportada pelo Heliocoptero: ");
         heli.Carga = double.Parse(Console.ReadLine());
-        Console.WriteLine($"Segue os detalhes do Helicoptero:\n\n{heli.ResumoHelicoptero}");
-        Console.WriteLine("Aperte qualquer tecla para continuar...");
-        Console.ReadKey();
+        Console.Clear();
+        Console.WriteLine("Deseja imprimir as informacoes?\nDigite 1 para (sim)\nDigite 2 ou qualquer outra tecla para (nao)");
+        opcaoImprimir = Console.ReadLine();
+        switch (opcaoImprimir)
+        {
+            case "1":
+                Console.Clear();
+                Console.WriteLine($"Segue os detalhes do Helicoptero:\n\n{heli.ResumoHelicoptero.ToUpper()}");
+                Console.WriteLine("Aperte qualquer tecla para continuar...");
+                Console.ReadKey();
+                break;
+            case "2":
+                Console.WriteLine("Aperte qualquer tecla para continuar...");
+                Console.ReadKey();
+                break;
+        }
     }
 
     void MenuSair()

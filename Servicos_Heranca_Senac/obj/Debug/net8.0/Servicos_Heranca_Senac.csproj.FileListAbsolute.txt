@@ -1,0 +1,15 @@
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\bin\Debug\net8.0\Servicos_Heranca_Senac.exe
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\bin\Debug\net8.0\Servicos_Heranca_Senac.deps.json
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\bin\Debug\net8.0\Servicos_Heranca_Senac.runtimeconfig.json
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\bin\Debug\net8.0\Servicos_Heranca_Senac.dll
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\bin\Debug\net8.0\Servicos_Heranca_Senac.pdb
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\Servicos_Heranca_Senac.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\Servicos_Heranca_Senac.AssemblyInfoInputs.cache
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\Servicos_Heranca_Senac.AssemblyInfo.cs
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\Servicos_Heranca_Senac.csproj.CoreCompileInputs.cache
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\Servicos_Heranca_Senac.sourcelink.json
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\Servicos_Heranca_Senac.dll
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\refint\Servicos_Heranca_Senac.dll
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\Servicos_Heranca_Senac.pdb
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\Servicos_Heranca_Senac.genruntimeconfig.cache
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Servicos_Heranca_Senac\obj\Debug\net8.0\ref\Servicos_Heranca_Senac.dll
