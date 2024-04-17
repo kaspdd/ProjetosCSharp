@@ -1,13 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-namespace ContaBancaria
-{
     public class Program
     {
         public static void Main(string[] args)
         {
-            Conta conta = new Conta();
-            double valor = 0;
-            int id = 0;
+            Titular carlos = new Titular("Carlos","12345-345","Rua Naruto de Aragao");
+            Titular juju = new Titular("Juju","12345-343","Rua Naruto de Aragao");
+            Conta contaCarlos = new Conta(carlos,123,123);
+            Conta contaJuju = new Conta(juju,123,123);
             voltarAoMenu:
             Console.WriteLine("Bem vindo a sua conta bancaria!");
             Console.WriteLine("Digite 1 para depositar:");
@@ -69,4 +68,4 @@ namespace ContaBancaria
             }
         }
     }
-}
+

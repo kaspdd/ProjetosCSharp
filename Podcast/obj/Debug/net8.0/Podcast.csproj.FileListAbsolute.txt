@@ -1,0 +1,15 @@
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\bin\Debug\net8.0\Podcast.exe
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\bin\Debug\net8.0\Podcast.deps.json
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\bin\Debug\net8.0\Podcast.runtimeconfig.json
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\bin\Debug\net8.0\Podcast.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\bin\Debug\net8.0\Podcast.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\Podcast.GeneratedMSBuildEditorConfig.editorconfig
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\Podcast.AssemblyInfoInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\Podcast.AssemblyInfo.cs
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\Podcast.csproj.CoreCompileInputs.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\Podcast.sourcelink.json
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\Podcast.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\refint\Podcast.dll
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\Podcast.pdb
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\Podcast.genruntimeconfig.cache
+F:\Estudos\BackEnd\ProjetosCSharp\Podcast\obj\Debug\net8.0\ref\Podcast.dll

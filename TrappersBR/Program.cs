@@ -1,16 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-//declarando atributos
 using System.Runtime.CompilerServices;
+using TrapperBR.Modelos;
+
+Banda ricardoMoveis = new Banda("Ricardo Moveis");
+Banda chrisBrown = new Banda("Chris Brown");
+
+
+Dictionary<string, Banda> bandasRegistradas = new Dictionary<string, Banda>();
+bandasRegistradas.Add(ricardoMoveis.Nome, ricardoMoveis);
+bandasRegistradas.Add(chrisBrown.Nome, chrisBrown);
 
 const string mensagemDeBoasVindas = "Bem vindo a Galery dos Trappers Br!\n";
-//List<string> listaDasBandas = new List<string> {"Jé","Igu","Naruto"};
-
-Dictionary<string, List<double>> artistasRegistrados = new Dictionary<string, List<double>>();
-artistasRegistrados.Add("Derek", new List<double>{10.0,9.0,6.0});
-artistasRegistrados.Add("Jé",new List<double>{3.0,5.0,6.0});
-
-
 
 static void ExibirLogo()
 {
@@ -33,18 +34,19 @@ static void ExibirLogo()
 
 }
 //Funcoes
-void RegistrarArtistas()
+void RegistrarBandas()
 {
     registrarNovamente:
     Console.Clear();
-    ExibirTituloDaOpcao("Registrar Artistas");
+    ExibirTituloDaOpcao("Registrar Bandas");
     Console.Write("Digite o nome do Artista: ");
     string nomeArtista = Console.ReadLine()!;
     Console.WriteLine($"\nO Artista {nomeArtista} foi Registrado com sucesso!!\n");
-    artistasRegistrados.Add(nomeArtista, new List<double>());
+    Banda banda = new Banda(nomeArtista);
+    bandasRegistradas.Add(nomeArtista, banda);
     Console.WriteLine("Deseja registrar um novo Artista?\nDigite 1 para (SIM)\nDigite 2 ou qualquer outra tecla para (NAO)");
-    string opcaoRegistrarArtistas = Console.ReadLine()!;
-    switch (opcaoRegistrarArtistas)
+    string opcaoRegistrarBandas = Console.ReadLine()!;
+    switch (opcaoRegistrarBandas)
     {
         case "1":
             Console.Clear();
