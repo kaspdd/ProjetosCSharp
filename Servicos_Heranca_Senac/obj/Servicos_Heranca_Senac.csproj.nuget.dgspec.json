@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlos.asouza48\\source\\repos\\ProjetosCSharp\\ProjetosCSharp\\Servicos_Heranca_Senac\\Servicos_Heranca_Senac.csproj": {}
+    "F:\\Estudos\\BackEnd\\ProjetosCSharp\\Servicos_Heranca_Senac\\Servicos_Heranca_Senac.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlos.asouza48\\source\\repos\\ProjetosCSharp\\ProjetosCSharp\\Servicos_Heranca_Senac\\Servicos_Heranca_Senac.csproj": {
+    "F:\\Estudos\\BackEnd\\ProjetosCSharp\\Servicos_Heranca_Senac\\Servicos_Heranca_Senac.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlos.asouza48\\source\\repos\\ProjetosCSharp\\ProjetosCSharp\\Servicos_Heranca_Senac\\Servicos_Heranca_Senac.csproj",
+        "projectUniqueName": "F:\\Estudos\\BackEnd\\ProjetosCSharp\\Servicos_Heranca_Senac\\Servicos_Heranca_Senac.csproj",
         "projectName": "Servicos_Heranca_Senac",
-        "projectPath": "C:\\Users\\carlos.asouza48\\source\\repos\\ProjetosCSharp\\ProjetosCSharp\\Servicos_Heranca_Senac\\Servicos_Heranca_Senac.csproj",
-        "packagesPath": "C:\\Users\\carlos.asouza48\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlos.asouza48\\source\\repos\\ProjetosCSharp\\ProjetosCSharp\\Servicos_Heranca_Senac\\obj\\",
+        "projectPath": "F:\\Estudos\\BackEnd\\ProjetosCSharp\\Servicos_Heranca_Senac\\Servicos_Heranca_Senac.csproj",
+        "packagesPath": "C:\\Users\\mamys\\.nuget\\packages\\",
+        "outputPath": "F:\\Estudos\\BackEnd\\ProjetosCSharp\\Servicos_Heranca_Senac\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\carlos.asouza48\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mamys\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
