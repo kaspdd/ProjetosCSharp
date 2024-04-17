@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quitanda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c5ef0f2292c894835e57d8b84d6da193b03b39f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e21603f5a3b35e6a80dd1681b3eafddf4107c49")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quitanda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quitanda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
