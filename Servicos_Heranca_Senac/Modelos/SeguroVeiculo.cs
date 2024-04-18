@@ -1,6 +1,6 @@
 namespace Servicos.Modelos;
 
-class SeguroVeiculos : Servico
+public class SeguroVeiculos : Servico
 {
     public SeguroVeiculos(string veiculo, int anoVeiculo, string contratante)
     {
@@ -21,20 +21,24 @@ class SeguroVeiculos : Servico
         string mensagemSeguroDeVida = "";
         if (AnoVeiculo >= 2000 && AnoVeiculo <= 2010)
         {
-            mensagemSeguroDeVida = "Voce selecionou: \nSeguro no valor de R$ 18.000,00 e Preco da franquia de R$ 6.000,00";
+            PrecoSeguro = 18000.00;
+            PrecoFranquia = 6000.00;
         }
         else if (AnoVeiculo >= 2011 && AnoVeiculo <= 2020)
-        {   
-            mensagemSeguroDeVida = $"O ano do veiculo: {AnoVeiculo}\nVoce selecionou: \nSeguro no valor de R$ 48.000,00 e Preco da franquia de R$ 16.000,00";
-        }
-        else if(AnoVeiculo >= 2021 && AnoVeiculo <= 2024)
         {
-            mensagemSeguroDeVida = $"O ano do veiculo: {AnoVeiculo}\nVoce selecionou: \nSeguro no valor de R$ 66.000,00 e Preco da franquia de R$ 22.000,00";
+            PrecoSeguro = 48000.00;
+            PrecoFranquia = 16000.00;
+        }
+        else if (AnoVeiculo >= 2021 && AnoVeiculo <= 2024)
+        {
+            PrecoSeguro = 66000.00;
+            PrecoFranquia = 22000.00;
         }
         else
         {
             mensagemSeguroDeVida = $"O ano {AnoVeiculo} nao esta dentro do periodo cadastrado, por favor digitar um ano entre 2000 a 2024.";
         }
-        return mensagemSeguroDeVida;	
+        mensagemSeguroDeVida = $"O ano do veiculo: {AnoVeiculo}\nVoce selecionou: \nSeguro no valor de {PrecoSeguro:c} e Preco da franquia de {PrecoFranquia:c}";
+        return mensagemSeguroDeVida;
     }
 }
