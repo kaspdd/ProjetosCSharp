@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TrappersBR")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Alura_Filmes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ddde336a906ae72d836b0880fd6ea4633bf827e")]
-[assembly: System.Reflection.AssemblyProductAttribute("TrappersBR")]
-[assembly: System.Reflection.AssemblyTitleAttribute("TrappersBR")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyProductAttribute("Alura_Filmes")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Alura_Filmes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

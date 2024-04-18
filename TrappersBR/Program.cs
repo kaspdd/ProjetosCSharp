@@ -113,15 +113,15 @@ void RegistrarAlbum()
 void MostrarBandasRegistradas()
 {
     Console.Clear();
-    ExibirTituloDaOpcao("Exibindo Artistas Registrados");
+    ExibirTituloDaOpcao("Exibindo Banda Registradas");
     // for (int i = 0; i< listaDasBandas.Count; i++)
     // {
     //     Console.WriteLine($"Artista: {listaDasBandas[i]}");
     // }
-
-    foreach (string artista in bandasRegistradas.Keys)
+    
+    foreach (string banda in bandasRegistradas.Keys)
     {
-        Console.WriteLine($"Artista: {artista} ");
+        Console.WriteLine($"Artista: {banda} ");
     }
 
     Console.WriteLine("\nDigite qualquer tecla para voltar ao menu:");
@@ -131,6 +131,22 @@ void MostrarBandasRegistradas()
     Thread.Sleep(2000);
     ExibirOpcoesDoMenu();
 }
+
+// void ExibirDetalhesDaBanda()
+// {
+//     ExibirTituloDaOpcao("Exibindo detalhes da Banda");
+//     Console.Write("Digite o nome da Banda que deseja conhecer melhor: ");
+//     string nomeDaBanda = Console.ReadLine()!; 
+//     if(bandasRegistradas.ContainsKey(nomeDaBanda))
+//     {
+//         Banda banda = bandasRegistradas[nomeDaBanda];
+//         Console.WriteLine($"\nA Media de avaliacoes da banda {nomeDaBanda} é: {banda.Media}.");
+//          Console.WriteLine("Aperte qualquer tecla para continuar...");
+//         Console.ReadKey();
+//         Console.Clear();
+//         ExibirOpcoesDoMenu();
+//     }
+// }
 
 void AvaliarBanda()
 {
@@ -189,7 +205,7 @@ void MediaAvaliacaoBandas()
     if(bandasRegistradas.ContainsKey(nomeDaBanda))
     {
         Banda banda = bandasRegistradas[nomeDaBanda];
-        Console.WriteLine($"A mediaDasNotas das avaliacoes do artista {nomeDaBanda} é: {banda.Media:f2}");
+        Console.WriteLine($"A mediaDasNotas das avaliacoes do artista {nomeDaBanda} é: {banda.Media}");
     }
     else
     {
