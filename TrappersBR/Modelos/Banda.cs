@@ -13,11 +13,19 @@ class Banda
 
     //para possibilitar que o parametro abaixo consiga utlizar o get(somente leitura) somente se o construtor estiver pedindo algo ou setando um valor direto no parametro.
     public string Nome { get; }
+    public double Media => notas.Average();
+    public List<Album> album => albums;
+    
 
     //metodos
     public void AdicionarAlbum(Album album)
     {
         albums.Add(album);
+    }
+
+    public void AdicionarNota(int nota)
+    {
+        notas.Add(nota);
     }
 
     public void ExibirDiscografia ()

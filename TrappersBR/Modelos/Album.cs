@@ -4,8 +4,8 @@ class Album
 {
     public Album(string nome, Genero genero)
     {
-        Genero = genero;
         Nome = nome;
+        Genero = genero;
     }
 
     private List<Musica> musicas = new List<Musica>();

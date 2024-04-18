@@ -1,6 +1,6 @@
 namespace Servicos.Modelos;
 
-class Emprestimo : Servico
+public class Emprestimo : Servico
 {
     public Emprestimo(double valor, string contratante)
     {
@@ -12,35 +12,49 @@ class Emprestimo : Servico
     public double Valor { get; set; }
     public double Taxa { get; set; }
 
+    public double Total { get; set; }
+    public double Parcela  { get; set; } 
+
+    public double QuantidadeParcela { get; set; }
+
+
     public string ResumoEmprestimo => $"Valor solicitado: {Valor:c}\nTaxa ";
 
     public string Parcelar ()
     {
-        string valorParcela = "";
-        double pacela = 0;
+        string mensagemParcela = "";
+        string valorTaxa = "";
         if (Valor >=1000 && Valor <= 5000)
         {
-            Taxa = Valor*1.28;
-            pacela = Taxa/12;
-            valorParcela = $"o valor de {Valor:c} com a taxa de 28% ficou o total de {Taxa:c}\nE divido em 12 vezes, cada parcela ficou em: {pacela:c}";
+            Taxa = 0.28;
+            Total = Valor+(Valor*Taxa);
+            QuantidadeParcela = 12;
+            Parcela = Total/QuantidadeParcela;
+            valorTaxa = "28%";
+            
         }
         else if (Valor > 5000 && Valor <= 10000)
         {
-            Taxa = Valor*1.52;
-            pacela = Taxa/24;
-            valorParcela = $"o valor de {Valor:c} com a taxa de 52% ficou o total de {Taxa:c}\nE divido em 12 vezes, cada parcela ficou em: {pacela:c}";
+            Taxa = 0.52;
+            Total = Valor+(Valor*Taxa);
+            QuantidadeParcela = 24;
+            Parcela = Total/QuantidadeParcela;
+            valorTaxa = "52%";
         }
-        else if(Valor >10000 && Valor <= 20000)
+        else if(Valor > 10000 && Valor <= 20000)
         {
-            Taxa = Valor*1.68;
-            pacela = Taxa/48;
-            valorParcela = $"o valor de {Valor:c} com a taxa de 68% ficou o total de {Taxa:c}\nE divido em 12 vezes, cada parcela ficou em: {pacela:c}";
+            Taxa = 0.68;
+            Total = Valor+(Valor*Taxa);
+            QuantidadeParcela = 48;
+            Parcela = Total/QuantidadeParcela;
+            valorTaxa = "68%";
         }
         else
         {
-            valorParcela = "Valor fora dos limites";
+            mensagemParcela = "Valor fora dos limites";
         }
-        return valorParcela;
+        mensagemParcela = $"o valor de {Valor:c} com a taxa de {valorTaxa} ficou o total de {Total:c}\nE divido em 48 vezes, cada parcela ficou em: {Parcela:c}";
+        return mensagemParcela;
     }
 
 }
