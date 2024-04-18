@@ -4,7 +4,13 @@ using System.Runtime.CompilerServices;
 using TrapperBR.Modelos;
 
 Banda ricardoMoveis = new Banda("Ricardo Moveis");
+ricardoMoveis.AdicionarNota(10);
+ricardoMoveis.AdicionarNota(9);
+ricardoMoveis.AdicionarNota(8);
 Banda chrisBrown = new Banda("Chris Brown");
+chrisBrown.AdicionarNota(10);
+chrisBrown.AdicionarNota(9);
+chrisBrown.AdicionarNota(10);
 
 
 Dictionary<string, Banda> bandasRegistradas = new Dictionary<string, Banda>();
@@ -40,10 +46,10 @@ void RegistrarBandas()
     Console.Clear();
     ExibirTituloDaOpcao("Registrar Bandas");
     Console.Write("Digite o nome do Artista: ");
-    string nomeArtista = Console.ReadLine()!;
-    Console.WriteLine($"\nO Artista {nomeArtista} foi Registrado com sucesso!!\n");
-    Banda banda = new Banda(nomeArtista);
-    bandasRegistradas.Add(nomeArtista, banda);
+    string nomeDaBanda = Console.ReadLine()!;
+    Console.WriteLine($"\nO Artista {nomeDaBanda} foi Registrado com sucesso!!\n");
+    Banda banda = new Banda(nomeDaBanda);
+    bandasRegistradas.Add(nomeDaBanda, banda);
     Console.WriteLine("Deseja registrar um novo Artista?\nDigite 1 para (SIM)\nDigite 2 ou qualquer outra tecla para (NAO)");
     string opcaoRegistrarBandas = Console.ReadLine()!;
     switch (opcaoRegistrarBandas)
@@ -62,7 +68,49 @@ void RegistrarBandas()
     
 }
 
-void MostrarArtistasRegistrados()
+void RegistrarAlbum()
+{
+    Console.Clear();
+    ExibirTituloDaOpcao("Registrando Albuns");
+    registrarALbumNovamente:
+    Console.Write("Digite o nome da Banda para registrar um album:");
+    string nomeDaBanda = Console.ReadLine();
+    if(bandasRegistradas.ContainsKey(nomeDaBanda))
+    {
+        Console.Write($"Digite o Titulo do album: ");
+        string nomeDoAlbum = Console.ReadLine();
+        Console.Write("Digite o genero do album: ");
+        string generoDoAlbum = Console.ReadLine();
+        Genero genero = new Genero(generoDoAlbum);
+        //atribuindo o nome da banda (que ja foi verificada acima que existe dentro do dicinary) a variavel banda do tipo Banda. 
+        Banda banda = bandasRegistradas[nomeDaBanda];
+        //Adicionando o nome do albume e o genero na classe banda atravez da funcao AdicionarAlbum.
+        banda.AdicionarAlbum(new Album(nomeDoAlbum, genero)); 
+        Console.WriteLine($"Album {nomeDoAlbum} e genero {generoDoAlbum} adicionado com sucesso na Banda {nomeDaBanda}!");
+    }
+    else
+    {
+        Console.WriteLine($"Banda Digitada nao encontrada );\nPor favor tentar novamente.");
+        goto registrarALbumNovamente;
+    }
+    Console.WriteLine("Deseja registrar um novo Artista?\nDigite 1 para (SIM)\nDigite 2 ou qualquer outra tecla para (NAO)");
+    string opcaoRegistrarAlbum = Console.ReadLine()!;
+    switch (opcaoRegistrarAlbum)
+    {
+        case "1":
+            Console.Clear();
+            goto registrarALbumNovamente;
+        default:
+            Console.WriteLine("Aguarde 2 segundos para ser direcionado ao menu...");
+            //A funcao Thread.Sleep(2000) faz com que o programa fique 2000 milesegundos parado antes da proxima acao.
+            Thread.Sleep(2000);
+            Console.Clear();
+            ExibirOpcoesDoMenu();
+            break;
+    }
+}
+
+void MostrarBandasRegistradas()
 {
     Console.Clear();
     ExibirTituloDaOpcao("Exibindo Artistas Registrados");
@@ -71,7 +119,7 @@ void MostrarArtistasRegistrados()
     //     Console.WriteLine($"Artista: {listaDasBandas[i]}");
     // }
 
-    foreach (string artista in artistasRegistrados.Keys)
+    foreach (string artista in bandasRegistradas.Keys)
     {
         Console.WriteLine($"Artista: {artista} ");
     }
@@ -84,7 +132,7 @@ void MostrarArtistasRegistrados()
     ExibirOpcoesDoMenu();
 }
 
-void AvaliarArtista()
+void AvaliarBanda()
 {
     //digite qual artista deseja avaliar
     //verificar se a banda existe no dicionario, ai sim pode atribuir ao dicionario
@@ -93,21 +141,24 @@ void AvaliarArtista()
     Console.Clear();
     ExibirTituloDaOpcao("Avaliar Artista");
     Console.Write("Digite o nome do Artista que deseja avaliar: ");
-    string nomeDoArtista = Console.ReadLine()!;
+    string nomeDaBanda = Console.ReadLine()!;
 
-    if (artistasRegistrados.ContainsKey(nomeDoArtista)){
-        Console.Write($"Qual é a nota que o artista {nomeDoArtista} merece? ");
-        double nota = double.Parse(Console.ReadLine()!);
+    if (bandasRegistradas.ContainsKey(nomeDaBanda))
+    {
+        //buscando no dicionary pelo nome da banda
+        Banda banda = bandasRegistradas[nomeDaBanda];
+        Console.Write($"Qual é a nota que o artista {nomeDaBanda} merece? ");
+        int nota = int.Parse(Console.ReadLine()!);
         //atribuindo uma nota ao artista digitado no variavel nomeArtista.
-        artistasRegistrados[nomeDoArtista].Add(nota);
-        Console.WriteLine($"A nota {(nota):f1} para o Artista {nomeDoArtista} foi registrada com sucesso!!.");
+        banda.AdicionarNota(nota);
+        Console.WriteLine($"A nota {(nota):f1} para o Artista {nomeDaBanda} foi registrada com sucesso!!.");
         Console.WriteLine("Aperte qualquer tecla para continuar...");
         Console.ReadKey();
         Console.Clear();
     }
     else
     {
-        Console.WriteLine($"O artista {nomeDoArtista} nao foi encontrado );");
+        Console.WriteLine($"O artista {nomeDaBanda} nao foi encontrado );");
     }
     Console.WriteLine("Deseja realizar uma nova avaliacao? \nDigite 1 para (SIM)\nDigite 2 ou qualquer outra tecla para (NAO): ");
     string opcaoAvaliacao = Console.ReadLine()!;
@@ -127,22 +178,22 @@ void AvaliarArtista()
     
 }
 
-void MediaAvaliacaoArtista()
+void MediaAvaliacaoBandas()
 {
     mediaNovamente:
     Console.Clear();
     ExibirTituloDaOpcao("Media das aviliacoes dos artistas");
     Console.Write("Digite o nome do artista que deseja verificar a media das avaliacoes: ");
-    string nomeDoArtista = Console.ReadLine()!;
+    string nomeDaBanda = Console.ReadLine()!;
 
-    if(artistasRegistrados.ContainsKey(nomeDoArtista))
+    if(bandasRegistradas.ContainsKey(nomeDaBanda))
     {
-        List<double> mediaDasAvaliacoes = artistasRegistrados[nomeDoArtista];
-        Console.WriteLine($"A mediaDasNotas das avaliacoes do artista {nomeDoArtista} é: {mediaDasAvaliacoes.Average():f2}");
+        Banda banda = bandasRegistradas[nomeDaBanda];
+        Console.WriteLine($"A mediaDasNotas das avaliacoes do artista {nomeDaBanda} é: {banda.Media:f2}");
     }
     else
     {
-        Console.WriteLine($"O artista {nomeDoArtista} nao foi encontrado );");
+        Console.WriteLine($"O artista {nomeDaBanda} nao foi encontrado );");
     }
     Console.WriteLine("Deseja realizar uma nova avaliacao? \nDigite 1 para (SIM)\nDigite 2 ou qualquer outra tecla para (NAO): ");
     string opcaoAvaliacao = Console.ReadLine()!;
@@ -173,33 +224,38 @@ void ExibirTituloDaOpcao(string titulo)
 
 void ExibirOpcoesDoMenu()
 {
-opcaoInvalida:
+    opcaoInvalida:
     ExibirLogo();
     Console.WriteLine("Escolha uma opcao no nosso menu: \n");
     Console.WriteLine("Digite 1 - Para cadastrar um Artista");
-    Console.WriteLine("Digite 2 - Para listar os Artitas");
-    Console.WriteLine("Digite 3 - Para avaliar um artista");
-    Console.WriteLine("Digite 4 - Para exibir a media de um Artista");
-    Console.WriteLine("Digite 5 - Para sair: ");
+    Console.WriteLine("Digite 2 - para cadastrar um album");
+    Console.WriteLine("Digite 3 - Para listar os Artitas");
+    Console.WriteLine("Digite 4 - Para avaliar um artista");
+    Console.WriteLine("Digite 5 - Para exibir a media de um Artista");
+    Console.WriteLine("Digite 6 - Para sair: ");
     string opcaoEscolhida = Console.ReadLine()!;
 
     switch (opcaoEscolhida)
     {
         case "1":
-            RegistrarArtistas();
+            RegistrarBandas();
             //Console.WriteLine($"Voce escolheu a opcao {opcaoEscolhida} ");
             break;
         case "2":
-            MostrarArtistasRegistrados();
+            RegistrarAlbum();
             //Console.WriteLine($"Voce escolheu a opcao {opcaoEscolhida} ");
             break;
         case "3":
-            AvaliarArtista();
+            MostrarBandasRegistradas();
             break;
         case "4":
-            MediaAvaliacaoArtista();
+            AvaliarBanda();
             break;
         case "5":
+            MediaAvaliacaoBandas();
+            
+            break;
+        case "6":
             Console.WriteLine("Flwwwww...");
             break;
         default:
