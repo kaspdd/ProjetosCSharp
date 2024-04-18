@@ -14,7 +14,7 @@ class Banda
     //para possibilitar que o parametro abaixo consiga utlizar o get(somente leitura) somente se o construtor estiver pedindo algo ou setando um valor direto no parametro.
     public string Nome { get; }
     public double Media => notas.Average();
-    public List<Album> album => albums;
+    //public List<Album> album => albums;
     
 
     //metodos
