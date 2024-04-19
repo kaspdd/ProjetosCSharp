@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicos_Heranca_Senac", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alura_Filmes", "Alura_Filmes\Alura_Filmes.csproj", "{4FFC323D-1E86-424B-BF6C-AA0BF166A7B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaterPonto_Senac_Polimorfismo", "BaterPonto_Senac_Polimorfismo\BaterPonto_Senac_Polimorfismo.csproj", "{C331926C-8808-4010-B8E3-D6FEE4013B85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,5 +128,9 @@ Global
 		{4FFC323D-1E86-424B-BF6C-AA0BF166A7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FFC323D-1E86-424B-BF6C-AA0BF166A7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FFC323D-1E86-424B-BF6C-AA0BF166A7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C331926C-8808-4010-B8E3-D6FEE4013B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C331926C-8808-4010-B8E3-D6FEE4013B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C331926C-8808-4010-B8E3-D6FEE4013B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C331926C-8808-4010-B8E3-D6FEE4013B85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
