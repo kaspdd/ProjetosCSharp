@@ -1,6 +1,6 @@
 namespace TrapperBR.Modelos;
 
-class Genero
+internal class Genero
 {
     public Genero(string nome)
     {

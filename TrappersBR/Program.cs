@@ -4,13 +4,13 @@ using System.Runtime.CompilerServices;
 using TrapperBR.Modelos;
 
 Banda ricardoMoveis = new Banda("Ricardo Moveis");
-ricardoMoveis.AdicionarNota(10);
-ricardoMoveis.AdicionarNota(9);
-ricardoMoveis.AdicionarNota(8);
+ricardoMoveis.AdicionarNota(new Avaliacao(10));
+ricardoMoveis.AdicionarNota(new Avaliacao(9));
+ricardoMoveis.AdicionarNota(new Avaliacao(8));
 Banda chrisBrown = new Banda("Chris Brown");
-chrisBrown.AdicionarNota(10);
-chrisBrown.AdicionarNota(9);
-chrisBrown.AdicionarNota(10);
+chrisBrown.AdicionarNota(new Avaliacao(10));
+chrisBrown.AdicionarNota(new Avaliacao(9));
+chrisBrown.AdicionarNota(new Avaliacao(10));
 
 
 Dictionary<string, Banda> bandasRegistradas = new Dictionary<string, Banda>();
@@ -166,7 +166,7 @@ void AvaliarBanda()
         Console.Write($"Qual é a nota que o artista {nomeDaBanda} merece? ");
         int nota = int.Parse(Console.ReadLine()!);
         //atribuindo uma nota ao artista digitado no variavel nomeArtista.
-        banda.AdicionarNota(nota);
+        banda.AdicionarNota(new Avaliacao(nota));
         Console.WriteLine($"A nota {(nota):f1} para o Artista {nomeDaBanda} foi registrada com sucesso!!.");
         Console.WriteLine("Aperte qualquer tecla para continuar...");
         Console.ReadKey();

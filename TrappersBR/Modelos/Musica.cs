@@ -1,6 +1,6 @@
 using System.Reflection.Metadata;
 namespace TrapperBR.Modelos;
-class Musica
+internal class Musica
 {
     //metodod construtor
     public Musica(string nome, int duracao, Banda artista, Genero genero)
