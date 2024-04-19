@@ -72,7 +72,7 @@ public class Program
                 Console.WriteLine($"Digite a idade do artista:");
                 int idade = int.Parse(Console.ReadLine());
                 Filme filme = filmesRegistrados[nomeDoFilme];
-                filme.AdicionarFilme(new Artista(nomeDoArtista,idade));
+                filme.AdicionarFilme(new Artista(nomeDoArtista,idade,filme));
                 
                 Console.WriteLine($"Filme {nomeDoFilme} cadastrado com sucesso!");
             }

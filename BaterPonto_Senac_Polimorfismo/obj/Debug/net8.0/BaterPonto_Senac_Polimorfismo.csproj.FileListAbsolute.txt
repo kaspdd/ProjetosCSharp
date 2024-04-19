@@ -1,0 +1,15 @@
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\bin\Debug\net8.0\BaterPonto_Senac_Polimorfismo.exe
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\bin\Debug\net8.0\BaterPonto_Senac_Polimorfismo.deps.json
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\bin\Debug\net8.0\BaterPonto_Senac_Polimorfismo.runtimeconfig.json
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\bin\Debug\net8.0\BaterPonto_Senac_Polimorfismo.dll
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\bin\Debug\net8.0\BaterPonto_Senac_Polimorfismo.pdb
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\BaterPonto_Senac_Polimorfismo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\BaterPonto_Senac_Polimorfismo.AssemblyInfoInputs.cache
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\BaterPonto_Senac_Polimorfismo.AssemblyInfo.cs
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\BaterPonto_Senac_Polimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\BaterPonto_Senac_Polimorfismo.sourcelink.json
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\BaterPonto_Senac_Polimorfismo.dll
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\refint\BaterPonto_Senac_Polimorfismo.dll
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\BaterPonto_Senac_Polimorfismo.pdb
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\BaterPonto_Senac_Polimorfismo.genruntimeconfig.cache
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\BaterPonto_Senac_Polimorfismo\obj\Debug\net8.0\ref\BaterPonto_Senac_Polimorfismo.dll
