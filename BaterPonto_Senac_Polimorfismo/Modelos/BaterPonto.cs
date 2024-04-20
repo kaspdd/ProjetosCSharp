@@ -2,7 +2,7 @@ using System.Data.Common;
 
 namespace BaterPonto.Modelos;
 
-public class BaterPonto 
+internal class BaterPonto 
 {
     public BaterPonto()
     {
