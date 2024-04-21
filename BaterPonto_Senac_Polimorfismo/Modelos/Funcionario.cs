@@ -25,83 +25,32 @@ internal class Funcionario : Setor
         admFuncionario.Add(funcionario);
         funcioanrios.Add(funcionario);
 
-        Console.WriteLine($"Deseja verificar os funcionarios cadastrados no setor Comercial: ");
-        listandoNovamente:
-        Console.WriteLine($"Digite 1 para (sim)\nDigite 2 para (nao)");
-
-        string opcao = Console.ReadLine();
-        switch (opcao)
+        Console.WriteLine($"Segue a lista de funcionarios do setor Administrativo:");
+        
+        foreach (var f in proFuncionario)
         {
-            case "1":
-                Console.WriteLine($"Lista de funcionarios do setor Comercial: ");
-                foreach (var f in proFuncionario)
-                {
-                    Console.WriteLine(f.resumoFuncionario);
-                }
-                break;
-            case "2":
-                Console.WriteLine($"Voltando ao menu...");
-                Thread.Sleep(2000);
-                break;
-            default:
-                Console.WriteLine($"Voce escolheu uma opcao invailida, por favor tentar novamente.");
-                goto listandoNovamente;
+            Console.WriteLine(f.resumoFuncionario);
         }
-
-
     }
     public void Producao(Funcionario funcionario)
     {
         proFuncionario.Add(funcionario);
         funcioanrios.Add(funcionario);
-        Console.WriteLine($"Deseja verificar os funcionarios cadastrados no setor Comercial: ");
-        listandoNovamente:
-        Console.WriteLine($"Digite 1 para (sim)\nDigite 2 para (nao)");
-
-        string opcao = Console.ReadLine();
-        switch (opcao)
+        Console.WriteLine($"Segue a lista de funcionarios do setor Administrativo:");
+        foreach (var f in proFuncionario)
         {
-            case "1":
-                Console.WriteLine($"Lista de funcionarios do setor Comercial: ");
-                foreach (var f in proFuncionario)
-                {
-                    Console.WriteLine(f.resumoFuncionario);
-                }
-                break;
-            case "2":
-                Console.WriteLine($"Voltando ao menu...");
-                Thread.Sleep(2000);
-                break;
-            default:
-                Console.WriteLine($"Voce escolheu uma opcao invailida, por favor tentar novamente.");
-                goto listandoNovamente;
+            Console.WriteLine(f.resumoFuncionario);
         }
+
     }
     public void Comercial(Funcionario funcionario)
     {
         comFuncionario.Add(funcionario);
         funcioanrios.Add(funcionario);
-        Console.WriteLine($"Deseja verificar os funcionarios cadastrados no setor Comercial: ");
-        listandoNovamente:
-        Console.WriteLine($"Digite 1 para (sim)\nDigite 2 para (nao)");
-
-        string opcao = Console.ReadLine();
-        switch (opcao)
+        Console.WriteLine($"Segue a lista de funcionarios do setor Administrativo:");
+        foreach (var f in comFuncionario)
         {
-            case "1":
-                Console.WriteLine($"Lista de funcionarios do setor Comercial: ");
-                foreach (var f in comFuncionario)
-                {
-                    Console.WriteLine(f.resumoFuncionario);
-                }
-                break;
-            case "2":
-                Console.WriteLine($"Voltando ao menu...");
-                Thread.Sleep(2000);
-                break;
-            default:
-                Console.WriteLine($"Voce escolheu uma opcao invailida, por favor tentar novamente.");
-                goto listandoNovamente;
+            Console.WriteLine(f.resumoFuncionario);
         }
 
     }
