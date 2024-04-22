@@ -7,19 +7,8 @@ public class Program
     internal static void Main(string[] args)
     {   
         Setor setor = new Setor();
-        Funcionario carlos = new Funcionario("Carlos",1,"Gerente",1);
-        Funcionario juju = new Funcionario("Juliana",2,"Encarregada",1);
-        Funcionario pc = new Funcionario("Paulo",3,"Gerente",2);
-        Funcionario bern = new Funcionario("Bernardo",4,"Gestor",2);
-        Funcionario yuri = new Funcionario("Yuri",5,"Gerente",3);
-        Funcionario bia = new Funcionario("Bia",6,"Gestora",3);
-        List<int> idFuncionarios = new List<int>();
-        idFuncionarios.Add(carlos.IdFuncionario);
-        idFuncionarios.Add(juju.IdFuncionario);
-        idFuncionarios.Add(pc.IdFuncionario);
-        idFuncionarios.Add(bern.IdFuncionario);
-        idFuncionarios.Add(yuri.IdFuncionario);
-        idFuncionarios.Add(bia.IdFuncionario);
+        
+        
 
         void MenuPrincipal()
         {
@@ -57,29 +46,7 @@ public class Program
 
         void CadastrandoFuncionario()
         {
-            ModeloTituloMenu("Menu - Cadastrando funcionarios\n");
-            Console.WriteLine($"Digite o nome do funcionario: ");
-            string nomeFucionario = Console.ReadLine();
-            Console.WriteLine($"Digite o id do funcionario: ");
-            int idFuncinoario = int.Parse(Console.ReadLine()!);
-            if (idFuncionarios.Contains(idFuncinoario))
-            {
-                Console.WriteLine($"Funcionario ja cadastrado, por favor digitar.");
-                
-            }
-            string nomeFucionario = Console.ReadLine();
-            Funcionario funcionario = new Funcionario();
-            Console.WriteLine($"Digite o numero do setor que deseja cadastrar o funcionario:");
-            setor.TabelaSetor();
-            string opcao = Console.ReadLine()!;
-            switch (opcao)
-            {
-                case "1":
-                    
-                    
-                    break;
-                case "2":
-            }
+            
         }
 
 

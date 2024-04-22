@@ -42,7 +42,7 @@ internal class Banda
 
         foreach(var album in albums)
         {
-            Console.WriteLine ($"Album: {album.Nome} - (Duracao do Album: {album.DuracaoTotal} segundos.)");
+            Console.WriteLine ($"Album: {album.Nome}\nGenero do Album: {album.Genero}\n - (Duracao do Album: {album.DuracaoTotal} segundos.)");
         }
     }
 }
