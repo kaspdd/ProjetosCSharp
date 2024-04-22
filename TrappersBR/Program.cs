@@ -4,13 +4,13 @@ using System.Runtime.CompilerServices;
 using TrapperBR.Modelos;
 
 Banda ricardoMoveis = new Banda("Ricardo Moveis");
-ricardoMoveis.AdicionarNota(10);
-ricardoMoveis.AdicionarNota(9);
-ricardoMoveis.AdicionarNota(8);
+ricardoMoveis.AdicionarNota(new Avaliacao(10));
+ricardoMoveis.AdicionarNota(new Avaliacao(9));
+ricardoMoveis.AdicionarNota(new Avaliacao(8));
 Banda chrisBrown = new Banda("Chris Brown");
-chrisBrown.AdicionarNota(10);
-chrisBrown.AdicionarNota(9);
-chrisBrown.AdicionarNota(10);
+chrisBrown.AdicionarNota(new Avaliacao(10));
+chrisBrown.AdicionarNota(new Avaliacao(9));
+chrisBrown.AdicionarNota(new Avaliacao(10));
 
 
 Dictionary<string, Banda> bandasRegistradas = new Dictionary<string, Banda>();
@@ -155,19 +155,19 @@ void AvaliarBanda()
     //senao, volta ao menu principal
     avaliandoNovamente:
     Console.Clear();
-    ExibirTituloDaOpcao("Avaliar Artista");
-    Console.Write("Digite o nome do Artista que deseja avaliar: ");
+    ExibirTituloDaOpcao("Avaliar Banda");
+    Console.Write("Digite o nome da banda que deseja avaliar: ");
     string nomeDaBanda = Console.ReadLine()!;
 
     if (bandasRegistradas.ContainsKey(nomeDaBanda))
     {
         //buscando no dicionary pelo nome da banda
         Banda banda = bandasRegistradas[nomeDaBanda];
-        Console.Write($"Qual é a nota que o artista {nomeDaBanda} merece? ");
-        int nota = int.Parse(Console.ReadLine()!);
+        Console.Write($"Qual é a nota que a banda {nomeDaBanda} merece? ");
+        Avaliacao nota = Avaliacao.Parse(Console.ReadLine());
         //atribuindo uma nota ao artista digitado no variavel nomeArtista.
         banda.AdicionarNota(nota);
-        Console.WriteLine($"A nota {(nota):f1} para o Artista {nomeDaBanda} foi registrada com sucesso!!.");
+        Console.WriteLine($"A nota {nota.Nota} para o banda {nomeDaBanda} foi registrada com sucesso!!.");
         Console.WriteLine("Aperte qualquer tecla para continuar...");
         Console.ReadKey();
         Console.Clear();
