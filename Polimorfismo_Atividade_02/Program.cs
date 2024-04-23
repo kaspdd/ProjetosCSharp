@@ -1,5 +1,5 @@
 ﻿using System.Security.Cryptography;
-using Temperatura.Modelos;
+using Polimorfismo.Modelos;
 
 void MenuPrincipal()
 {
