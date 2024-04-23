@@ -17,6 +17,7 @@ public class Program
 
         filmesRegistrados.Add(tinet.NomeFilme, tinet);
         filmesRegistrados.Add(madagascar.NomeFilme, madagascar);
+        
 
         void MenuPrincipal()
         {

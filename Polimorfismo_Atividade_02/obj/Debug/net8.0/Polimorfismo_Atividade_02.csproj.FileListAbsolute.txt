@@ -1,0 +1,15 @@
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\bin\Debug\net8.0\Polimorfismo_Atividade_02.exe
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\bin\Debug\net8.0\Polimorfismo_Atividade_02.deps.json
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\bin\Debug\net8.0\Polimorfismo_Atividade_02.runtimeconfig.json
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\bin\Debug\net8.0\Polimorfismo_Atividade_02.dll
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\bin\Debug\net8.0\Polimorfismo_Atividade_02.pdb
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\Polimorfismo_Atividade_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\Polimorfismo_Atividade_02.AssemblyInfoInputs.cache
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\Polimorfismo_Atividade_02.AssemblyInfo.cs
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\Polimorfismo_Atividade_02.csproj.CoreCompileInputs.cache
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\Polimorfismo_Atividade_02.sourcelink.json
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\Polimorfismo_Atividade_02.dll
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\refint\Polimorfismo_Atividade_02.dll
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\Polimorfismo_Atividade_02.pdb
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\Polimorfismo_Atividade_02.genruntimeconfig.cache
+C:\Users\carlos.asouza48\source\repos\ProjetosCSharp\ProjetosCSharp\Polimorfismo_Atividade_02\obj\Debug\net8.0\ref\Polimorfismo_Atividade_02.dll
